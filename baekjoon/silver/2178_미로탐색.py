@@ -2,7 +2,7 @@ from collections import deque
 
 queue = deque()
 N, M = map(int, input().split())
-array = [[int(i) for i in input()] for _ in range(N)]
+array = [[map(int, input())] for _ in range(N)]
 visited = [[False] * M for _ in range(N)]
 dx = [0, 0, -1, 1] # 상, 하, 좌, 우
 dy = [1, -1, 0, 0]
